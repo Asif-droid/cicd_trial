@@ -27,9 +27,9 @@ export function getAllPosts(): Post[] {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   
-  let itemStr=JSON.stringify(posts);
-  itemStr=itemStr.replaceAll(/\$\{basePath\}/gi, nextConfig.basePath);
-  posts=JSON.parse(itemStr);
+  // let itemStr=JSON.stringify(posts);
+  // itemStr=itemStr.replaceAll(/\$\{basePath\}/gi, nextConfig.basePath);
+  // posts=JSON.parse(itemStr);
 
   
   return posts;
