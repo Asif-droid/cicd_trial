@@ -1,7 +1,12 @@
 /**
  * @type {import('next').NextConfig}
  */
+
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
+    // set basePath to cicd if in production
+    basePath: isProd ? '/cicd_trial' : '',
+
     output: 'export',
    
    
